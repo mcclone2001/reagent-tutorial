@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+ENV _JAVA_OPTIONS=-Xmx2g
 WORKDIR /tmp
 RUN apt-get update \
 	&& apt-get install -y \
@@ -8,7 +9,6 @@ RUN apt-get update \
     && apt-get install git -y
 RUN npm install -g npx
 RUN npm install -g shadow-cljs
-RUN export _JAVA_OPTIONS="-Xmx2g"
 RUN git clone https://github.com/jacekschae/learn-reagent-course-files
 RUN cd learn-reagent-course-files/giggin && npm install
 EXPOSE 3000
