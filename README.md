@@ -35,7 +35,7 @@ Quedaremos conectados al contenedor donde ahora ejecutaremos
 /tmp/learn-reagent-course-files/giggin# npx shadow-cljs watch app
 ```
 
-Esto deja ejecutando un demonio que estará pendiente de los cambios hechos a los archivos en la carpeta
+Esto deja ejecutando un script que estará pendiente de los cambios hechos a los archivos en la carpeta
 
 /tmp/learn-reagent-course-files/giggin/src
 
